@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taylor Swift Concert</title>
+        <meta charset="utf-8">
+        <meta name="Register Page" content="Register Page">
+        <link rel="stylesheet" href="registration.css">
+    </head>
+
+    <style>
+        /* Body style */
+        body{
+            background-image: url('./Images/backgrounp.jpg');   /* Add the background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background image */ 
+        }  
+
+        /* Logo image */
+        .logo {
+        margin-left: 30px; /* Sets the margin area on the left side to 30px */
+    }
+    </style>
+
+<header>
+        <!-- Navigation bar -->
+        <!-- Creates a navigation bar with links and a logo -->
+        <div class="navigation-bar">
+            <!-- Logo image dispalyed on the navigation bar -->
+            <!-- Sets the width of the logo image to 150px and height to 50px -->
+            <img class="logo" src="./Images/logo.png" width="150px" height="50px">
+            <!-- Create a list with two list items, which is home and contact link -->
+            <ul class="navigation-list">
+                <!-- Create a hyperlink to "main.html" -->
+                <li><a class="navigation-item" href="main.html"><strong>Home</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "contact.html" -->
+                <li><a class="navigation-item" href="contact.html"><strong>Contact Us</strong></a></li> <!-- Make the text bold -->
+            </ul>
+            <!-- Create a list with two list items, which is sign up and login link -->
+            <!-- The list items are floated to the right within the navigation bar -->
+            <ul class="navigation-list" style="float: right; ">
+                <!-- Create a hyperlink to "registration.html" -->
+                <li><a class="navigation-item" href="registration.html"><strong>Sign Up</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "login.html" -->
+                <li ><a class="navigation-item" href="login.html"><strong>Login</strong></a></li>  <!-- Make the text bold --> 
+            </ul>
+        </div>
+</header>
+
+    <body>
+        <!-- Registration Form -->
+        <div class="Register_form"> <!-- Container for the Registration form -->
+            <h2>Sign Up</h2>   <!-- Heading for the Registration form -->
+            <!-- Creates a sign up form with fields for users enter username, email address, password and confirm password -->
+            <!-- All fields are required (required attribute is used), meaning the form cannot be submitted without filling them out. -->
+            <!-- Required attribute must be filled out before submit the form, if the field is left empty when the form is submitted, the browser will display a validation message prompting the user to fill in the field.-->
+            <form>
+               
+                <!-- Creates a label for the username input field. -->
+                <label for="username">Username:</label>     
+                <!-- Creates a text input field for the user to enter their username -->
+                <input type="text" id="username" name="username" required>  
+
+                <!-- Creates a label for the email input field. -->
+                <label for="email">Email:</label>    
+                <!-- Creates a text input field for the user to enter their email --> 
+                <!-- Ensures that they must provide a valid email address before submitting the form. -->
+                <input type="email" id="email" name="email" required>  
+                        
+                <!-- Creates a label for the password input field. -->
+                <label for="password">Password:</label>     
+                <!-- Creates a text input field for the user to enter their password -->
+                <!-- The characters they type will be masked for security purposes. -->
+                <input type="password" id="password" name="password" required>      
+                    
+                <!-- Creates a label for the confirm password input field. -->
+                <label for="confirm_password">Confirm Password:</label>     
+                <!-- Creates a text input field for the user to enter their confirm password -->
+                <!-- The characters they type will be masked for security purposes. -->
+                <input type="password" id="confirm_password" name="confirm_password" required>  
+                 
+                <!--  Creates a button for submit the sign up form -->  
+                <!-- When users clicks the button, it'll navigate users to the Login page  -->    
+                <button type="submit">Sign Up</button>
+                  
+                 <!-- Provide a message for user if have an account -->
+                <div class="Login_link">
+                    <!-- Link to login page for users who have an account to login to their account -->
+                    <!-- Sets the login.html with the text "Login Here", and color it to red  -->
+                    <p>Have an account? <a href="login.html" style="color: red;">Login Here</a></p> 
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

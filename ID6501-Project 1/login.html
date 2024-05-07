@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taylor Swift Concert</title>
+        <meta charset="utf-8">
+        <meta name="Login Page" content="Login Page">
+        <link rel="stylesheet" href="login.css">
+    </head>
+
+    <style>
+        /* Body style */
+        body{
+            background-image: url('./Images/backgrounp.jpg'); /* Add the background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background image */ 
+        } 
+
+        /* Logo image */
+        .logo {
+        margin-left: 30px; /* Sets the margin area on the left side to 30px */
+    }
+    </style>
+
+    <header>
+        <!-- Navigation bar -->
+        <!-- Creates a navigation bar with links and a logo -->
+        <div class="navigation-bar">
+            <!-- Logo image dispalyed on the navigation bar -->
+            <!-- Sets the width of the logo image to 150px and height to 50px -->
+            <img class="logo" src="./Images/logo.png" width="150px" height="50px">
+            <!-- Create a list with two list items, which is home and contact link -->
+            <ul class="navigation-list">
+                <!-- Create a hyperlink to "main.html" -->
+                <li><a class="navigation-item" href="main.html"><strong>Home</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "contact.html" -->
+                <li><a class="navigation-item" href="contact.html"><strong>Contact Us</strong></a></li> <!-- Make the text bold -->
+            </ul>
+            <!-- Create a list with two list items, which is sign up and login link -->
+            <!-- The list items are floated to the right within the navigation bar -->
+            <ul class="navigation-list" style="float: right; ">
+                <!-- Create a hyperlink to "registration.html" -->
+                <li><a class="navigation-item" href="registration.html"><strong>Sign Up</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "login.html" -->
+                <li ><a class="navigation-item" href="login.html"><strong>Login</strong></a></li>  <!-- Make the text bold --> 
+            </ul>
+        </div>
+    </header>
+
+    <body>
+        <!-- Login Form -->
+        <div class="login-form">  <!-- Container for the login form -->
+            <h2>Login</h2>  <!-- Heading for the login form -->
+            <!-- Creates a login form with fields for users enter email address and password -->
+            <!-- All fields are required (required attribute is used), meaning the form cannot be submitted without filling them out. -->
+            <!-- Required attribute must be filled out before submit the form, if the field is left empty when the form is submitted, the browser will display a validation message prompting the user to fill in the field.-->
+            <form>
+                <!-- Creates a label for the email input field. -->
+                <label for="email">Email:</label>  
+                <!-- Creates a text input field for the user to enter their email -->
+                <!-- Ensures that they must provide a valid email address before submitting the form. -->
+                <input type="email" id="email" name="email" required> 
+                      
+                <!-- Creates a label for the password input field. -->
+                <label for="password">Password:</label>  
+                <!-- Creates a text input field for the user to enter their password -->
+                <!-- The characters they type will be masked for security purposes. -->
+                <input type="password" id="password" name="password" required>  
+                    
+                <!-- Container for the remember me checkbox -->
+                <div class="remember_box_check">  
+                    <!-- Creates a label for the remember checkbox. -->
+                    <!-- Creates a checkbox -->
+                    <!-- When click on the text also toggle the checkbox -->
+                    <label class="remember"><input type="checkbox">Remember Me</label>                   
+                </div>
+                 <!--  Creates a button for submit the login form -->  
+                 <!-- When users clicks the button, it'll navigate users to the Home page  -->    
+                <button type="submit">Login</button>  
+                    
+                <!-- Provide a message for user if doesn't have an account -->
+                <div class="Register_link">  
+                    <!-- Link to sig up page for users who doesn't have an account to create an account -->
+                    <!-- Sets the registration.html with the text "Sign Up", and color it to red  -->
+                    <p>Not have an account? <a href="registration.html" style="color: red;">Sign Up</a></p>  
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

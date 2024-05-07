@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us Page</title>
+        <meta charset="utf-8">
+        <meta name="Contact Us Page" content="Contact Us Page ">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+
+    <style>
+        /* Logo image */
+        .logo {
+            margin-left: 30px; /* Sets the margin area on the left side to 30 pixels */
+            }
+
+         /* textarea elements have 6 pixels of padding, a width of 300 pixels, and a left margin of 100 pixels. */
+        textarea{
+            padding: 6px;  /* Sets the padding of the elements to 6 pixels */
+            width: 300px;   /* Sets the width to 300 pixels */
+            margin-left: 100px;  /* Sets the margin area on the left side to 100 pixels */   
+            }
+    </style>
+
+    <header>
+        <!-- Banner container -->
+        <!-- Creates a banner with an image and text overlay centered on the image -->
+        <div class="banner">
+            <!-- Banner image has an empty alt attribute -->
+            <!-- empty alt attribute used to provide alternative text for screen readers and in cases where the image cannot be displayed. -->
+            <img src="./Images/banner.jpg" alt="">
+            <!-- Heading container -->
+            <div class="banner-text">
+                <h1>Contact Us</h1> <!-- Heading text -->
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <!-- Creates a navigation bar with links and a logo -->
+        <div class="navigation-bar">
+            <!-- Logo image dispalyed on the navigation bar -->
+            <!-- Sets the width of the logo image to 150px and height to 50px -->
+            <img class="logo" src="./Images/logo.png" width="150px" height="50px">
+            <!-- Create a list with two list items, which is home and contact link -->
+            <ul class="navigation-list">
+                <!-- Create a hyperlink to "main.html" -->
+                <li><a class="navigation-item" href="main.html"><strong>Home</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "contact.html" -->
+                <li><a class="navigation-item" href="contact.html"><strong>Contact Us</strong></a></li> <!-- Make the text bold -->
+            </ul>
+            <!-- Create a list with two list items, which is sign up and login link -->
+            <!-- The list items are floated to the right within the navigation bar -->
+            <ul class="navigation-list" style="float: right; ">
+                <!-- Create a hyperlink to "registration.html" -->
+                <li><a class="navigation-item" href="registration.html"><strong>Sign Up</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "login.html" -->
+                <li ><a class="navigation-item" href="login.html"><strong>Login</strong></a></li>  <!-- Make the text bold --> 
+            </ul>
+        </div>
+    </header>
+
+    <body>
+        <!-- Message Form -->
+        <!--  Creates a message form with fields for users to send a message -->
+        <!-- The form include user's information, such as full name, email address, and the message itself -->
+        <fieldset class="message_form">
+            <!-- Creates a heading for the form -->
+            <!-- Aligns the text to the center, sets the margin area on the bottom side to 5 pixels  -->
+            <h2 style="text-align: center; margin-bottom: 5px;">Send Us A Message</h2>
+            <!--paragraph information -->
+            <!-- Aligns the text to the center, sets the margin area on the top side to 2 pixels  -->
+            <p style="text-align: center; margin-top: 2px;">We are here to answer any questions you may have.</p>
+
+            <!-- Input field for the user's full name -->
+            <p>
+                <!-- Creates a label for the full name input field. -->
+                <label for="name">Full Name:</label><br> 
+                <!-- Creates a text input field for the user to enter their full name -->
+                <input type="text" id="name" name="name">
+            </p>
+
+            <!-- Input field for the user's email address -->
+            <p>
+                <!-- Creates a label for the email input field. -->
+                <label for="email">Email:</label><br>   
+                <!-- Creates a text input field for the user to enter their email -->
+                <input type="email" id="email" name="email">    
+            </p>
+
+            <!-- Textarea field for the message -->
+            <p>
+                <!-- Creates a label for the message input field. -->
+                <label for="message">Message:</label><br>   
+                <!-- Creates a textarea field for the user to enter message -->
+                <textarea name="message" id="message" cols="55" rows="5"></textarea>  
+            </p>
+
+            <!-- Creates a button for submit the message form -->
+            <!-- When users clicks the button, it'll submit the form to the concert organizers to reslove any issues may have  -->
+            <button type="submit">Send Message</button>
+        </fieldset>
+            
+        <!-- Info Details -->
+        <!-- Creates a section displaying contact information -->
+        <!-- It contains address, phone, and email address -->
+        <!-- Sets the background color to blue-gray (#94a9bb) -->
+        <div style="background-color: #94a9bb;" class="info_details">
+            <!-- Address Details -->
+            <div class="location_details">
+                 <!-- SVG icon for address -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                <div class="topic" style="font-weight: bold;">Address</div> <!-- Make the text bold -->
+                <div class="street" style="color: white;">42 Mahuhu Cres</div> <!-- Sets the text color to white -->
+                <div class="city" style="color: white;">Auckland</div> <!-- Sets the text color to white -->
+            </div>
+            <!-- Phone Details -->
+            <div class="phone_details">
+                <!-- SVG icon for phone -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                <div class="topic" style="font-weight: bold;">Phone</div> <!-- Make the text bold -->
+                <div class="number" style="color: white;">+021 1111 2222</div>  <!-- Sets the text color to white -->         
+            </div>
+            <!-- Email Details -->
+            <div class="email_details">
+                <!-- SVG icon for email -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg>
+                <div class="topic" style="font-weight: bold;">Email</div> <!-- Make the text bold -->
+                <div class="number" style="color: white;">taylorswift@gmail.com</div>  <!-- Sets the text color to white -->       
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+/* Banner */
+/* Sets the width of the image to 100% of its container's width, allow it to adjust based on the viewport width */
+/* Sets the height of the image to auto, which maintains the aspect ratio of the image while scaling its width. Ensures the image doesn't get distorted when resized */
+.banner img {
+    width: 100%; /* Adjusted to fit the viewport width */
+    height: auto; /* To maintain aspect ratio */
+} 
+
+/* Banner heading */
+.banner-text {
+    position: absolute; /* Positions the text absolutely within its containing element */
+    top: 30%; /* Sets the top position of the text overlay to 30% of the container height  */
+    left: 50%; /* Sets the left position of the text overlay to the center of the container */
+    transform: translate(-50%, -50%); /* Horizontally and vertically centers the text within its container */
+    text-align: center; /* Aligns the text to the center */
+    color: white; /* Sets the text color to white */
+    font-size: 35px; /* Sets the font size of the text to 35 pixels */
+}
+
+/* Navigation Bar */
+/* Create a avigation bar with height, background color and a layout where its contents are evenly spaced horizontally */
+.navigation-bar {
+    min-height: 40px; /* Sets the minimum height of the navigation bar to 40 pixels */
+    display: flex;  /* Sets the display property to "flex", which allows the navigation bar to be treated as a flex container */
+    justify-content: space-between; /* Aligns the flex items (contents of the navigation bar) along the main axis (horizontal axis) with space between them */
+    background-color: #94a9bb; /* Sets the background color of the navigation bar to a shade of blue-gray (#94a9bb) */
+    overflow: hidden; /* Hides any content that overflows the navigation bar */
+    width: 100%; /*  Sets the width of the navigation bar to 100% of its containing element */
+    margin: -4px 0; /* Sets the margin of the navigation bar to -4 pixels at the top and bottom and 0 pixels on the left and right sides */
+}
+
+/* Removing default styling such as bullet points, margins, and paddings, and setting the display property to "inline-flex" to arrange the list items horizontally */
+.navigation-list {
+    list-style: none; /* Removes the default bullet point styling from the list items */
+    margin: 0; /* Removes any margin from the top, bottom, left, and right of the list */
+    padding: 0; /* Removes any padding from the top, bottom, left, and right of the list */
+    display: inline-flex; /* Setting the display property to "inline-flex" to arrange the list items horizontally */
+} 
+
+/* Sets the color, font size and margin */
+.navigation-item{
+    color: black; /* Sets the text color to black */
+    font-size: 20px; /* Sets the font size of the text to 20 pixels */
+    margin: 0 15px; /* Sets the margin of the navigation items to 0 pixels at the top and bottom, and 15 pixels on the left and right sides */
+}
+
+/* Sets the block display, text color, centered text, specified font size, padding around the text, and removes the underline decoration */
+.navigation-list li a {
+    display: block; /* Sets the display property of the <a> elements to "block", each link will take up the full width of its container */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text within the links horizontally */
+    font-size: 20px; /* Sets the font size to 20 pixels */
+    /* Sets the padding around the text within the links */
+    padding: 14px 16px; /* Sets the the top and the bottom to 14 pixels, left and right to 16 pixels */
+    text-decoration: none; /* Removes the underline decoration from the links*/
+} 
+
+/* When a user hovers their mouse pointer over a navigation link, will underlines the link text */
+.navigation-list li a:hover {
+    text-decoration:underline; /* Adds an underline to the text of the anchor elements when they are hovered over */
+}
+
+/* Message Form */
+.message_form{
+    min-height: 50vh; /* Sets the minimum height to 50% of the viewport height */
+    max-width: 500px; /* Sets the maximum width to 500 pixels */
+    border-radius: 3px; /* Sets the border radius to 3 pixels, giving rounded corners */
+    margin: 30px auto; /* Sets the top and bottom margin to 30 pixels and left and right margins to auto */
+}
+
+/* Label of the message form */
+.message_form p label{
+    margin-bottom: 2px;  /* Sets the margin area on the bottom side to 2 pixels */
+    margin-left: 100px;  /* Sets the margin area on the left side to 100 pixels */
+}
+
+/* Input filed of the message form */
+.message_form p input{
+    padding: 6px; /* Sets the padding to 6 pixels */
+    width: 300px; /* Sets the width to 300 pixels */
+    margin-left: 100px; /* Sets the margin area on the left side to 100 pixels */
+}
+
+/* Button */
+.message_form button{
+    padding: 10px; /* Sets the padding of the elements to 10 pixels */
+    background-color: black; /* Sets the background color of the button to black */
+    color: white;  /* Sets the text color of the button to white */
+    border: none; /* Removes any border around the button */
+    border-radius: 3px; /* Sets the border radius to 3 pixels, giving rounded corners */
+    cursor: pointer;    /* Changes the cursor to a pointer when hovering over the button, indicating that it is clickable */
+    font-weight: bold;  /* Make the text bold */
+    margin: auto; /* Sets the margin to auto on all sides */
+    margin-left: 100px; /* Sets the margin area on the left side to 100 pixels */
+    width: 320px; /* Sets the width of the button to 320 pixels */
+}
+
+/* Change button background color when is hovered */
+.message_form button:hover {
+    background-color:#937070;    /* Sets the background color of the button to dark pink (#937070) when it's being hovered over */
+}
+
+/* Info Details */
+.info_details{
+    margin-top: 36px; /* Sets the margin area on the top side to 36 pixels */
+    display: flex;  /* Sets the display property to "flex", which allows the navigation bar to be treated as a flex container */
+    justify-content: space-evenly;  /* Distributes child elements evenly along the main axis */
+    padding: 10px; /* Sets the padding of the elements to 10 pixels */
+}
+

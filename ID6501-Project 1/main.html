@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taylor Swift Concert</title>
+        <meta charset="utf-8">
+        <meta name="Taylor Swift Concert" content="Taylor Swift Concert">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <style>
+        /* Logo image */
+        .logo {
+            margin-left: 30px; /* Sets the margin area on the left side to 30 pixels */
+            }
+
+        /* About Taylor Swift Info */
+        .About_Info{
+            padding: 10px; /* Sets the padding of the elements to 10 pixels */
+            margin-top: 30px; /* Sets the margin of the element to 30 pixels */
+        }
+        
+    </style>
+
+    <header>
+        <!-- Banner container -->
+        <!-- Creates a banner with an image and text overlay centered on the image -->
+        <div class="banner">
+            <!-- Banner image has an empty alt attribute -->
+            <!-- empty alt attribute used to provide alternative text for screen readers and in cases where the image cannot be displayed. -->
+            <img src="./Images/banner.jpg" alt=""> 
+            <!-- Heading container -->
+            <div class="banner-text">
+                <h1>Taylor Swift</h1> <!-- Heading text -->
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <!-- Creates a navigation bar with links and a logo -->
+        <div class="navigation-bar">
+            <!-- Logo image dispalyed on the navigation bar -->
+            <!-- Sets the width of the logo image to 150px and height to 50px -->
+            <img class="logo" src="./Images/logo.png" width="150px" height="50px">
+            <!-- Create a list with two list items, which is home and contact link -->
+            <ul class="navigation-list">
+                <!-- Create a hyperlink to "main.html" -->
+                <li><a class="navigation-item" href="main.html"><strong>Home</strong></a></li>  <!-- Make the text bold -->
+                <!-- Create a hyperlink to "contact.html" -->
+                <li><a class="navigation-item" href="contact.html"><strong>Contact Us</strong></a></li>  <!-- Make the text bold -->
+            </ul>
+            <!-- Create a list with two list items, which is sign up and login link -->
+            <!-- The list items are floated to the right within the navigation bar -->
+            <ul class="navigation-list" style="float: right; ">
+                <!-- Create a hyperlink to "registration.html" -->
+                <li><a class="navigation-item" href="registration.html"><strong>Sign Up</strong></a></li> <!-- Make the text bold -->
+                <!-- Create a hyperlink to "login.html" -->
+                <li ><a class="navigation-item" href="login.html"><strong>Login</strong></a></li>  <!-- Make the text bold -->
+            </ul>
+        </div>
+    </header>
+
+    <body>
+        <!-- About Taylor Swift Info -->
+        <!-- Create a section to provide information about Taylor Swift, with a title and two paragraphs of text styled with justified alignment  -->
+        <div class="About_Info">
+            <h2>About Taylor Swift</h2>  <!-- Heading -->
+            <!-- 2 paragraph contain information about Taylor Swift -->
+            <!-- Align the text justified -->
+            <p style="text-align: justify;">Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. 
+                A subject of widespread public interest, she has influenced the music industry and 
+                popular culture through her artistry, songwriting and entrepreneurship. </p>
+                
+                <!-- Align the text justified -->
+                <p style="text-align: justify;">Swift began professional songwriting at age 14. She signed with Big Machine Records 
+                in 2005 and achieved prominence as a country pop singer with the albums Taylor Swift 
+                (2006) and Fearless (2008).</p>
+        </div>
+            
+        <!-- Upcoming Tours  -->
+        <!-- Creates a styled heading element with padding and a margin on the top to separate it from content -->
+        <!-- Adds 10 pixels of padding inside the <h2> element, providing space between the content and the edge of the element -->
+        <!-- Adds a top margin of 30 pixels to the <h2> element, creating space between this heading and the content above it -->
+        <h2 style="padding: 10px; margin-top: 30px;">Upcoming Concerts...</h2>
+        <!-- Creates 3 different sections of Taylor Swift concerts: "1989", "Red", and "Midnights" -->
+        <!-- Each section contains information such as the concert name, date, location, and price, along with a "Buy Tickets" button -->
+        <div class="tours_info">
+            <!-- 1989 Concert -->
+            <!-- Creates a section for Taylor Swift's "1989" concert -->
+            <div class="_1989_info">
+                <!-- Container for the 1989 cover image -->
+                <div class="_1989_img"> 
+                    <img src="./Images/1989.png">  <!-- 1989 cover images -->
+                </div>
+                <!-- Container for the concert name, data, location and price -->
+                <div class="_1989_content">
+                    <!-- Sets the 1989 concert content to center of the container -->
+                    <!-- Aligns the text in the center, and sets the "1989" font size to 25 pixels -->
+                    <h3 style="text-align: center;">Welcome to Taylor Swift's "<span style="font-size: 25px;">1989</span>" Concert Experience!</h3>
+                    <!-- Aligns the text in the center, make the word "Date" bold -->
+                    <p style="text-align: center;"><strong>Date:</strong> 21/05/2025</p>
+                    <!-- Aligns the text in the center, make the word "Location" bold -->
+                    <p style="text-align: center;"><strong>Location:</strong> Sydney</p>
+                    <!-- Aligns the text in the center, make the word "Price" bold -->
+                    <p style="text-align: center;"><strong>Price:</strong> $280</p>
+                </div>
+                <!-- When users click the Buy Tickets button, it'll display the box that say "Successfully buy a tickets for 1989" -->
+                <div class="buy_tickets_button">
+                    <!-- Creates a button with the label "Buy Tickets" -->
+                    <button type="button">Buy Tickets</button>
+                </div>
+            </div>
+
+            <!-- Red Concert-->
+            <!-- Creates a section for Taylor Swift's "Red" concert -->
+            <div class="red_info">
+                <!-- Container for the red cover image -->
+                <div class="red_img">
+                    <img src="./Images/red.png">    <!-- red cover images -->
+                </div>
+                <!-- Container for the concert name, data, location and price -->
+                <div class="red_content">
+                    <!-- Sets the Red concert content to center of the container -->
+                    <!-- Aligns the text in the center, and sets the "Red" font size to 25 pixels -->
+                    <h3 style="text-align: center;">Welcome to Taylor Swift's "<span style="font-size: 25px;">Red</span>" Concert Experience!</h3>
+                    <!-- Make the word "Date" bold -->
+                    <p><strong>Date:</strong> 01/08/2025</p>
+                    <!-- Make the word "Location" bold -->
+                    <p><strong>Location:</strong> Los Angeles</p>
+                    <!-- Make the word "Price" bold -->
+                    <p><strong>Price:</strong> $280</p>
+                </div>
+                <!-- When users click the Buy Tickets button, it'll display the box that say "Successfully buy a tickets for Red" -->
+                <div class="buy_tickets_button">
+                    <!-- Creates a button with the label "Buy Tickets" -->
+                    <button type="button">Buy Tickets</button>
+                </div>
+            </div>
+
+            <!-- Midnights Concert -->
+            <!-- Creates a section for Taylor Swift's "Midnights" concert -->
+            <div class="midnights_info">
+                <!-- Container for the Midnights cover image -->
+                <div class="midnights_img">
+                    <img src="./Images/midnights.png">      <!-- midnights cover images -->
+                </div>
+                <!-- Container for the concert name, data, location and price -->
+                <div class="midnights_content">
+                    <!-- Sets the Midnights concert content to center of the container -->
+                    <!-- Aligns the text in the center, and sets the "Midnights" font size to 25 pixels -->
+                    <h3 style="text-align: center;">Welcome to Taylor Swift's "<span style="font-size: 25px;">Midnights</span>" Concert Experience!</h3>
+                    <!-- Make the word "Date" bold -->
+                    <p><strong>Date:</strong> 16/11/2025</p>
+                    <!-- Make the word "Location" bold -->
+                    <p><strong>Location:</strong> Singapore</p>
+                    <!-- Make the word "Price" bold -->
+                    <p><strong>Price:</strong> $280</p>
+                </div>
+                <!-- When users click the Buy Tickets button, it'll display the box that say "Successfully buy a tickets for Midnights" -->
+                <div class="buy_tickets_button">
+                    <!-- Creates a button with the label "Buy Tickets" -->
+                    <button type="button">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
